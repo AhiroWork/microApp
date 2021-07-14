@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="team left-team" onclick="point(left)">
+        <div class="count" id="left">0</div>
+        <div class="pointed" >Point</div>
+    </div>
+
+    <div class="team right-team" onclick="point(right)">
+        <div class="count" id="right">0</div>
+        <div class="pointed">Point</div>
+    </div>
+
+    <div class="mistake">
+        <div class="right-mistake" onclick="mines(left)">Ошибка зеленым</div>
+        <div class="left-mistake"  onclick="mines(right)">Ошибка красным</div>
+    </div>
+
+    <div class="btn-reset" onclick="reset()">Обнулить</div>
+
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        // Объявдение переменных счета
+        var ls = 0;
+        var rs = 0;
+        // Функция добавления очков
+        var point = function(side){
+            if(side == left){
+                ls = ls + 1;
+                $('#left').text(ls);
+            }else{
+                rs = rs + 1;
+                $('#right').text(rs)
+            }
+        }
+        // Функция сбросаф
+        var reset = function(){
+            ls = 0;
+            rs = 0;
+            $('#left').text(ls);
+            $('#right').text(rs);
+        }
+        // Фунция исправления ошибок
+        var mines = function(side){
+            
+            if(side == left){
+                ls = ls - 1;
+                $('#left').text(ls);
+            }else{
+                rs = rs - 1;
+                $('#right').text(rs)
+            }
+        }
+    </script>
+</body>
+</html>
