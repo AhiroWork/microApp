@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Титул страницы */
+.page-title{
+    width: 100%;
+    height: 10vh;
+    background: turquoise;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 30px;
+    float: left;}
+/* Контент страницы */
+.page-content{
+    width: 100%;
+    height: 85vh;}
+.page-item{
+    width: 90%;
+    height: 5vh;
+    margin: 1vh 0 0 5%;
+    color: turquoise;    
+    display: none;
+    float: left;}
+.item-number{
+    font-size: 35px;
+    line-height: 5vh;
+    float: left;}
+.item-name{
+    margin: 4px 0 0 10px;
+    font-size: 30px;
+    float: left;}
+/* Панель добавления задачи */
+.page-add{
+    width: 100%;
+    height: 10vh;}
+.task-name{
+    width: 60%;
+    height: 5vh;
+    margin: 2vh 0 0 5%;
+    border: none;
+    border-bottom: 2px solid turquoise;
+    float: left;}
+.task-addbtn{
+    height: 4vh;
+    width: 20%;
+    margin: 3vh 0 0 2%;
+    text-align: center;
+    line-height: 5vh;
+    border-bottom: 2px solid turquoise;
+    font-family: monospace;
+    font-size: 14px;
+    float: left;
+}
+
+
+.page-reset{
+    background: red;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    line-height: 5vh;}

@@ -1,36 +1,154 @@
 *{
     margin: 0;
-    padding: 0;
-}
-
+    padding: 0;}
 .wrapper{
     width: 940px;
-    margin: 0 auto;
-}
-
+    margin: 0 auto;}
+body{
+    background: rgb(196, 196, 241);}
+a{
+    color: black;
+    text-decoration: none;}
+/* Шапка */
 .header-bg{
-    background: rgb(95, 95, 214);
     width: 100%;
     height: 60px;
-}
+    background: rgb(95, 95, 214);}
 .header-logo{
     width: 30%;
     height: 60px;
-    font-size: 30px;
     color: white;
+    font-size: 30px;
     font-family: monospace;
-    float: left;
     line-height: 60px;
-}
-
+    float: left;}
 .header-search{
     width: 50%;
     height: 60px;
-    float: left;
-}
+    float: left;}
 .search{
-    width: 70%;
+    width: 60%;
     height: 20px;
     margin-top: 25px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid skyblue;
+    color: white;
+    font-family: monospace;
+    float: left;}
+.search-btn{
+    width: 20%;
+    height: 30px;
+    margin: 16px 0 0 5%;
+    background: none;
+    border: none;
+    font-family: monospace;
+    font-size: 18px;
+    border-bottom: 1px solid skyblue;
+    color: white;}
+.search-btn:active{
+    border-bottom: 1px solid rgb(95, 177, 209);}
+/* Профиль в шапке */
+.header-profile{
+    width: 20%;
+    height: 50px;
+    margin-top: 5px;
+    color: white;
+    font-family: monospace;
+    float: left;}
+.profile-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    float: left;}
+.profile-name{
+    height: 10px;
+    margin: 5px 10px 5px 5px;
+    font-size: 16px;
+    float: left;}
+.profile-status{
+    margin: 10px 0 0 0 ;
+    font-size: 10px;
+    color: rgb(87, 219, 87);}
+.profile-lvl{
+    margin: 10px 0 0 5px;
+    color: rgb(243, 158, 158);
+    float: left;}
+
+/* Контент и карточки app */
+.content{
+    width: 100%;
+    min-height: 800px;
+    margin-top: 60px;
+    background: white;
+    border: 2px solid rgb(95, 95, 214);
+    border-radius: 10px;}
+.fix-conteiner{
+    width: 100%;
+    height: 30px;
+    float: left;}
+.content-title{
+    width: 40%;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid rgb(95, 95, 214);
+    background: rgb(95, 95, 214);
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-radius: 5px 0 30px 0;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 22px;
+    float: left;}
+/* Карточка приложения */
+.app-item{
+    width: 30%;
+    height: 300px;
+    margin: 30px 0 0 3%;
+    border: 1px solid rgb(95, 95, 214);
+    font-family: monospace;
+    float: left;}
+.app-logo{
+    width: 100%;
+    height: 200px;
     float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.app-btn{
+    height: 30px;
+    width: 40%;
+    background: rgb(95, 95, 214);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    transition: 0.2s;}
+.app-btn:hover{
+    background: rgb(23, 23, 141);
+    transition: 0.2s;}
+.app-title{
+    width: 100%;
+    height: 40px;
+    background: rgb(95, 95, 214);
+    color: white;
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;}
+.app-discribe{
+    width: 100%;
+    text-align: left;
+    background: rgb(196, 196, 241);
+    color: rgb(54, 54, 54);
+    float: left;
+    height: 60px;
+}
+
+
+#Vscore-logo{
+    background: url(Vscore/Vscorelogo.png);
+    background-size: 100% 200px;
 }

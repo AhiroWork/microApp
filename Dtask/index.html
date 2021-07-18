@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-title">Список</div>
+    <div class="page-content">
+        <div class="page-item" id="item1">
+            <div class="item-number">1</div>
+            <div class="item-name" id="item1text">Сходить в магазин</div>
+        </div>
+        <div class="page-item" id="item2">
+            <div class="item-number">2</div>
+            <div class="item-name" id="item2text">Сходить в магазин</div>
+        </div>
+        <div class="page-item" id="item3">
+            <div class="item-number">3</div>
+            <div class="item-name" id="item3text">Сходить в магазин</div>
+        </div>
+        <div class="page-item" id="item4">
+            <div class="item-number">4</div>
+            <div class="item-name" id="item4text">Сходить в магазин</div>
+        </div>
+        <div class="page-item" id="item5">
+            <div class="item-number">5</div>
+            <div class="item-name" id="item5text">Сходить в магазин</div>
+        </div>
+    </div>
+    <div class="page-add">
+        <input type="text" name="task-name" class="task-name">
+        <div class="task-addbtn" onclick="newTask()">Добавить</div>
+    </div>
+    <div class="page-reset">Обнулить</div>
+   
+    <script src="JQuery.js"></script>
+    <script>
+        var number = 1;
+        // Функция обнуления задач
+        $('.page-reset').click(function(){
+            number = 1;
+            $('.page-item').hide();
+        });
+        // Функция завершения задания
+        $('.page-item').click(function(){
+            $(this).css('color','red');
+        })
+        // Функция добавления задания
+        var newTask = function(){
+            switch (number) {
+                case 1:
+                    $('#item1').show();
+                    $('#item1text').text($('.task-name').val());
+                    $('.task-name').val('');
+                    number = number + 1;
+                    break;
+                case 2:
+                    $('#item2').show();
+                    $('#item2text').text($('.task-name').val());
+                    $('.task-name').val('');
+                    number = number + 1;
+                    break;
+                case 3:
+                    $('#item3').show();
+                    $('#item3text').text($('.task-name').val());
+                    $('.task-name').val('');
+                    number = number + 1;
+                    break;
+                case 4:
+                    $('#item4').show();
+                    $('#item4text').text($('.task-name').val());
+                    $('.task-name').val('');
+                    number = number + 1;
+                    break;
+                case 5:
+                    $('#item5').show();
+                    $('#item5text').text($('.task-name').val());
+                    $('.task-name').val('');
+                    number = number + 1;
+                    break;
+                case 5:
+                    $('#item1').show();
+                    $('#item2text').text($('.task-name').val());
+                    $('.task-name').val('');
+                    number = number + 1;
+                    break;
+                default:
+                    alert('Достигнуть лимит!');
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

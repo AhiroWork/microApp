@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mapp</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Шапка -->
     <header class="header-bg">
-        <div class="wrapper">
-            <div class="header-logo">MicroApp</div>
-            <div class="header-search">
-                <input type="text" class="search">
-                <input type="button" value="Поиск" class="search-btn">
-            </div>
+      <div class="wrapper">
+        <div class="header-logo">MicroApp</div>
+        <div class="header-search">
+          <input type="text" class="search" />
+          <input type="button" value="Поиск" class="search-btn" />
         </div>
+        <div class="header-profile">
+          <img src="logoprof.jpg" alt="" class="profile-icon" />
+          <div class="profile-name">Ahiro</div>
+          <div class="profile-status">online</div>
+          <div class="profile-lvl">7 lvl(admin)</div>
+        </div>
+      </div>
     </header>
-
+    <!-- Мини приложения -->
     <div class="wrapper">
-        <div class="content">
-            <div class="app-item">
-                <div class="app-logo">
-                    <div class="app-btn">Использовать</div>
-                </div>
-                <div class="app-title">Vscore</div>
-                <div class="app-discribe">Мини приложение для счета очкой в волейболе</div>
-            </div>
+      <div class="content">
+
+        <div class="fix-conteiner">
+          <div class="content-title">Mapp list:</div>
         </div>
+
+        <!-- Счет в волейболе -->
+        <div class="app-item">
+          <div class="app-logo" id="Vscore-logo">
+            <a href="Vscore/index.html" class="app-btn"> Использовать </a>
+          </div>
+          <div class="app-title">Vscore</div>
+          <div class="app-discribe">
+            Мини приложение для счета очкой в волейболе
+          </div>
+        </div>
+        <!-- Список задач -->
+        <div class="app-item">
+            <div class="app-logo" id="Dtask-logo">
+              <a href="Dtask/index.html" class="app-btn"> Использовать </a>
+            </div>
+            <div class="app-title">Dtask</div>
+            <div class="app-discribe">
+              Ежидневник для записи и просмотря задач
+            </div>
+          </div>
+      </div>
     </div>
-</body>
+    <!-- Футер -->
+  </body>
 </html>
